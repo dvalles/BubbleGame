@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\strawMove.cs">
+    <Files>
+      <File FileName="Assets\Scripts\BubbleManager.cs" Line="51" Column="1" />
+      <File FileName="Assets\Scripts\strawMove.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BubbleGrow.cs" Line="31" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

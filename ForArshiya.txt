@@ -1,0 +1,5 @@
+-Run the game from the Finished_Game folder. The CokeKinectProject folder is just all of the unity files and whatnot.
+
+-If the computer is too slow to run the game, try lowering the graphics.
+
+-Let me know if there are any problems!  
