@@ -90,7 +90,7 @@ public class Fade : MonoBehaviour {
             if (ren.color.a > .396f)
                 ren.color = new Color(ren.color.r, ren.color.g, ren.color.b, .396f);
 
-
+           // Application.LoadLevel(Application.loadedLevelName);
             yield return null;
         }
     }

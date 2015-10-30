@@ -41,6 +41,7 @@ public class BubbleManager : MonoBehaviour {
     public int dontFlashTill = 0;
     private bool endVisible = false;
     private bool startVisible = true;
+    public bool restartCounting = false;
 
     
 
@@ -108,6 +109,8 @@ public class BubbleManager : MonoBehaviour {
                 timerCon.countDown = false;
                 //overlayEnd = Instantiate(overlayEndPrefab, overlayEndPrefab.transform.position, overlayEndPrefab.transform.rotation);
                 overlayEnd.GetComponent<Fade>().StartFadeIn();
+                restartCounting = true;
+                //restartCount = 0;
                 // StartCoroutine("waitAndFadeIn");
                 transform.GetComponentInChildren<ParticleSystem>().enableEmission = false;
                 spriteRen.sprite = handSprite;
@@ -167,6 +170,7 @@ public class BubbleManager : MonoBehaviour {
                 if (fadeCountReplay > fadeWait + 20)
                 {
                     //overlayEnd
+                    restartCounting = false;
                     buttonStrokeEnd.color = new Color(1f, 1f, 1f, 0f);
                     endVisible = false;
                     overlayEnd.GetComponent<Fade>().StartFade();

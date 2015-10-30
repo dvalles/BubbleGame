@@ -8,7 +8,7 @@ public class BodySourceView : MonoBehaviour
     public Material BoneMaterial;
     public GameObject BodySourceManager;
 	public Vector3 handPosition;
-    private ulong bodyOnly;
+    public ulong bodyOnly;
     private bool assigned = false;
     
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
@@ -74,7 +74,7 @@ public class BodySourceView : MonoBehaviour
             if (body == null)
             {
                 continue;
-              }
+            }
             if(body.IsTracked)
             {
                 if (!assigned)
@@ -104,8 +104,10 @@ public class BodySourceView : MonoBehaviour
         {
             bodyOnly = firstBody;
         }
+        if (bodyOnly == 0)
+            assigned = false;
 
-        Debug.Log(bodyOnly);
+       // Debug.Log("Calling here: " + bodyOnly);
        // assigned = false;
         
         List<ulong> knownIds = new List<ulong>(_Bodies.Keys);
@@ -197,8 +199,8 @@ public class BodySourceView : MonoBehaviour
                         updated = 0;
                         if (body.TrackingId == bodyOnly)
                         {
-                            Debug.Log("Hand updated by:");
-                            Debug.Log(body.TrackingId);
+                          //  Debug.Log("Hand updated by:");
+                          //  Debug.Log(body.TrackingId);
                             handPosition = GetVector3FromJoint(targetJoint.Value);
                         }
                     }

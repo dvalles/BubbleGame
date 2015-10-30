@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\FallBG.cs" />
      <Compile Include="Assets\Scripts\IceCubeSpawn.cs" />
      <Compile Include="Assets\Scripts\NoSides.cs" />
+     <Compile Include="Assets\Scripts\RestartManager.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\checkOverBG.cs" />
      <Compile Include="Assets\Scripts\deathSphereMan.cs" />
