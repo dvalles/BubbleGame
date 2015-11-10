@@ -10,7 +10,7 @@ public class FallBG : MonoBehaviour
     void Start()
     {
         float scaler = 1 + Time.time / 90;
-        speed = Random.Range(.3f, 1.1f);
+        speed = Random.Range(.8f, 1.6f);
         body = GetComponent<Rigidbody2D>();
         float scale = Random.Range(0.45905570f, .8590557f);
         transform.localScale = new Vector3(scale, scale, scale);

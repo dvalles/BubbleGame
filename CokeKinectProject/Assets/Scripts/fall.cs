@@ -7,7 +7,7 @@ public class fall : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         float scaler = 1 + Time.time / 90;
-		speed = Random.Range (.5f, 1f);
+		speed = Random.Range (.9f, 1.5f);
 		body = GetComponent<Rigidbody2D> ();
 	}
 	
